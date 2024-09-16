@@ -1,5 +1,10 @@
-<h1>Your Question:</h1>
-<p><%= @question %></p>
+<div class="container">
+  <h1>Coach's Answer</h1>
 
-<h1>Coach's Answer:</h1>
-<p><%= @answer %></p>
+  <div class="answer-container">
+    <p><strong>Question:</strong> <%= @question %></p>
+    <p><strong>Answer:</strong> <%= @answer %></p>
+  </div>
+
+  <%= link_to 'Ask another question', ask_path %>
+</div>
